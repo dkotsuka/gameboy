@@ -1,14 +1,21 @@
-# Game Boy games repository
-This is my repository of some experimental games made in C
-for classic Game Boy device.
+# Game Boy Games Repository
 
-## Instruction
-Download and install the Game Boy Development Kit - GBDK:
-- [Lastest releases](https://github.com/gbdk-2020/gbdk-2020/releases)
+Welcome to my repository of experimental games developed in C for the classic Game Boy device.
 
-Access the game subfolder and run the .bat file:
-```./make.bat```
+## Instructions
 
-It will compile some files, included the .gb ROM file.
+### 1. Install the Game Boy Development Kit (GBDK)
+Download and install the latest version of the Game Boy Development Kit (GBDK) from the following link:
+- [Latest Releases](https://github.com/gbdk-2020/gbdk-2020/releases)
 
-Run it on any Game Boy emulator.
+### 2. Compile the Game
+Navigate to the game subfolder and run the `.bat` file:
+```sh ./make.bat```
+
+This will compile the necessary files, including the .gb ROM file.
+
+### 3. Run the Game
+You can play the compiled game on any Game Boy emulator.
+
+Enjoy your gaming experience!
+
