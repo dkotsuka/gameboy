@@ -1,0 +1,10 @@
+*.o
+*.noi
+*.map
+*.ihx
+*.lst
+*.sym
+*.gb
+*.asm
+
+class-**/**
