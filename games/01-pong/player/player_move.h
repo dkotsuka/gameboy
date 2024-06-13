@@ -1,9 +1,9 @@
-#ifndef MOVE_H
-#define MOVE_H
+#ifndef PLAYER_MOVE_H
+#define PLAYER_MOVE_H
 
 #include <gb/gb.h>
 
 // Function to move player
 void move_player(void);
 
-#endif // MOVE_H
+#endif // PLAYER_MOVE_H

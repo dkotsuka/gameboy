@@ -1,4 +1,4 @@
-#include "move.h"
+#include "player_move.h"
 
 // Function to move player
 void move_player(void)
