@@ -1,5 +1,6 @@
 #include "player_render.h"
 #include "../global/screen.h"
+#include "../global/sprites.h"
 #include "../assets/Ship.h"
 
 // Define and initialize constants and variables
@@ -12,12 +13,12 @@ void render_player(void)
     player_pos_y = SCREEN_HEIGHT - PLAYER_H - DEATH_ZONE_H;
     player_pos_x = SCREEN_WIDTH / 2;
 
-    set_sprite_data(0, 3, Ship);
-    set_sprite_tile(0, 0);
-    set_sprite_tile(1, 1);
-    set_sprite_tile(2, 2);
-    move_sprite(0, player_pos_x - 8, player_pos_y);
-    move_sprite(1, player_pos_x, player_pos_y);
-    move_sprite(2, player_pos_x + 8, player_pos_y);
+    set_sprite_data(player_sprite_index_1, 3, Ship);
+    set_sprite_tile(player_sprite_index_1, player_sprite_index_1);
+    set_sprite_tile(player_sprite_index_2, player_sprite_index_2);
+    set_sprite_tile(player_sprite_index_3, player_sprite_index_3);
+    move_sprite(player_sprite_index_1, player_pos_x - 8, player_pos_y);
+    move_sprite(player_sprite_index_2, player_pos_x, player_pos_y);
+    move_sprite(player_sprite_index_3, player_pos_x + 8, player_pos_y);
     SHOW_SPRITES;
 }

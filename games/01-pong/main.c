@@ -12,7 +12,6 @@ void main(void)
     while (1)
     {
         move_player();
-
         delay(3);
     }
 }

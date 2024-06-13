@@ -2,6 +2,7 @@
 #define PLAYER_MOVE_H
 
 #include <gb/gb.h>
+#include "../global/sprites.h"
 
 // Function to move player
 void move_player(void);

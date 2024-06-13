@@ -2,6 +2,7 @@
   "C_Cpp.errorSquiggles": "enabled",
   "files.associations": {
     "gb.h": "c",
-    "stdint.h": "c"
+    "stdint.h": "c",
+    "sprites.h": "c"
   }
 }
