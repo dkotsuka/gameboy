@@ -8,10 +8,10 @@ void main(void)
 {
     render_player();
     render_ball();
-
+    SHOW_SPRITES;
     while (1)
     {
         move_player();
-        delay(3);
+        vsync();
     }
 }

@@ -20,5 +20,4 @@ void render_player(void)
     move_sprite(player_sprite_index_1, player_pos_x - 8, player_pos_y);
     move_sprite(player_sprite_index_2, player_pos_x, player_pos_y);
     move_sprite(player_sprite_index_3, player_pos_x + 8, player_pos_y);
-    SHOW_SPRITES;
 }
