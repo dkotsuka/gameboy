@@ -24,6 +24,7 @@ typedef struct
     uint8_t sprite_ids[3];
     uint8_t width;
     uint8_t height;
+    uint8_t max_speed;
 } Player;
 
 typedef struct

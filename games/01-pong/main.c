@@ -5,8 +5,10 @@ void main(void)
 {
     init_player();
     SHOW_SPRITES;
+
     while (1)
     {
+        control_player();
         vsync();
     }
 }
