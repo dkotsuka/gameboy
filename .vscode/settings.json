@@ -5,6 +5,7 @@
     "stdint.h": "c",
     "sprites.h": "c",
     "ball_render.h": "c",
-    "ball_move.h": "c"
+    "ball_move.h": "c",
+    "player_render.h": "c"
   }
 }
