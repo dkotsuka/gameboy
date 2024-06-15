@@ -3,7 +3,7 @@
 uint8_t player_position = 88;
 int8_t player_direction;
 uint8_t player_acceleration = 1;
-const ACCELERATION_LIMIT = 5;
+const uint8_t ACCELERATION_LIMIT = 5;
 
 // Function to move player
 void move_player(void)

@@ -3,6 +3,8 @@
   "files.associations": {
     "gb.h": "c",
     "stdint.h": "c",
-    "sprites.h": "c"
+    "sprites.h": "c",
+    "ball_render.h": "c",
+    "ball_move.h": "c"
   }
 }
