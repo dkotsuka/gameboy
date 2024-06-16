@@ -8,8 +8,8 @@ void init_ball(void)
     ball.direction.y = -1;
     ball.height = 8;
     ball.width = 8;
-    ball.position.x = (SCREEN_W / 2) - (ball.width / 2);
-    ball.position.y = (SCREEN_H / 2) - (ball.height / 2);
+    ball.position.x = 80;
+    ball.position.y = 76;
     ball.velocity.x = 1;
     ball.velocity.y = 1;
     ball.max_speed = 4;

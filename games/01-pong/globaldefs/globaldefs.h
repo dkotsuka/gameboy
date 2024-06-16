@@ -11,8 +11,8 @@
 #define VECTOR2D_H
 typedef struct
 {
-    int x;
-    int y;
+    uint8_t x;
+    uint8_t y;
 } Vector2D;
 #endif // VECTOR2D_H
 

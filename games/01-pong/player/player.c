@@ -7,8 +7,8 @@ void init_player(void)
     player.direction.x = 0;
     player.height = 8;
     player.width = 24;
-    player.position.x = (SCREEN_W / 2) - (player.width / 2);
-    player.position.y = SCREEN_H - player.height - DEATH_ZONE_H;
+    player.position.x = 80;
+    player.position.y = 148;
     player.velocity.x = 1;
     player.velocity.y = 0;
     player.max_speed = 5;
