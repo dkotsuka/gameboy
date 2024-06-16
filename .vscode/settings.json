@@ -6,6 +6,7 @@
     "sprites.h": "c",
     "ball_render.h": "c",
     "ball_move.h": "c",
-    "player_render.h": "c"
+    "player_render.h": "c",
+    "backgroundmap.h": "c"
   }
 }
