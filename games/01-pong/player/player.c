@@ -28,7 +28,8 @@ void init_player(void)
 
 void move_player(uint8_t position_x)
 {
-    player.position.x = position_x;
+    check_wall_collision(position_x);
+
     move_sprite(player.sprite_ids[0], player.position.x, player.position.y);
     move_sprite(player.sprite_ids[1], player.position.x + 8, player.position.y);
     move_sprite(player.sprite_ids[2], player.position.x + 16, player.position.y);
@@ -67,5 +68,21 @@ void decrease_player_velocity(void)
     if (player.velocity.x > 0)
     {
         player.velocity.x -= 1;
+    }
+}
+
+void check_wall_collision(uint8_t position_x)
+{
+    if (position_x < 12)
+    {
+        player.position.x = 12;
+    }
+    else if (position_x + player.width > 160)
+    {
+        player.position.x = 164 - player.width;
+    }
+    else
+    {
+        player.position.x = position_x;
     }
 }

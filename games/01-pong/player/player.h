@@ -9,3 +9,4 @@ void control_player(void);
 
 void increase_player_velocity(void);
 void decrease_player_velocity(void);
+void check_wall_collision(uint8_t position_x);
