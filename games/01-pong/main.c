@@ -1,6 +1,6 @@
 #include <gb/gb.h>
 #include "player/player.h"
-#include "background/Background.h"
+#include "background/background.h"
 
 void main(void)
 {

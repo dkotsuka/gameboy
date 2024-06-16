@@ -7,6 +7,10 @@
     "ball_render.h": "c",
     "ball_move.h": "c",
     "player_render.h": "c",
-    "backgroundmap.h": "c"
+    "backgroundmap.h": "c",
+    "ship.h": "c",
+    "background.h": "c",
+    "wall.h": "c",
+    "player.h": "c"
   }
 }

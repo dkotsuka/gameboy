@@ -1,4 +1,6 @@
 #include <gb/gb.h>
+#include "../assets/Ship.h"
+#include "../background/background.h"
 #include "../globaldefs/globaldefs.h"
 
 void init_player(void);
@@ -9,4 +11,3 @@ void control_player(void);
 
 void increase_player_velocity(void);
 void decrease_player_velocity(void);
-void check_wall_collision(uint8_t position_x);

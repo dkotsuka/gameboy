@@ -1,6 +1,4 @@
 #include "Background.h"
-#include "../assets/Wall.h"
-#include "../assets/BackgroundMap.h"
 
 void render_background(void)
 {
@@ -9,4 +7,20 @@ void render_background(void)
 
     SHOW_BKG;
     DISPLAY_ON;
+}
+
+void check_wall_collision(Object *object, uint8_t future_pos_x)
+{
+    if (future_pos_x < SCREEN_LIMIT_L)
+    {
+        object->position.x = SCREEN_LIMIT_L;
+    }
+    else if (future_pos_x + object->width > SCREEN_LIMIT_R)
+    {
+        object->position.x = SCREEN_LIMIT_R - object->width;
+    }
+    else
+    {
+        object->position.x = future_pos_x;
+    }
 }
