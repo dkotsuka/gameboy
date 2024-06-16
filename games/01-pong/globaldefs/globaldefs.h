@@ -3,6 +3,7 @@
 #define SCREEN_H 160
 #define SCREEN_W 168
 #define DEATH_ZONE_H 8
+#define SCREEN_LIMIT_T 20
 #define SCREEN_LIMIT_L 12
 #define SCREEN_LIMIT_R 164
 

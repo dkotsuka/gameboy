@@ -11,6 +11,7 @@
     "ship.h": "c",
     "background.h": "c",
     "wall.h": "c",
-    "player.h": "c"
+    "player.h": "c",
+    "ball.h": "c"
   }
 }

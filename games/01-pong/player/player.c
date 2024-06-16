@@ -27,7 +27,7 @@ void init_player(void)
 
 void move_player(uint8_t position_x)
 {
-    check_wall_collision(&player, position_x);
+    check_wall_collision(&player, position_x, player.position.y, 0);
 
     move_sprite(player.sprite_ids[0], player.position.x, player.position.y);
     move_sprite(player.sprite_ids[1], player.position.x + 8, player.position.y);

@@ -1,8 +1,8 @@
 /*
 
- EXPORT.H
+ EXPORT.C
 
- Include File.
+ Tile Source File.
 
  Info:
   Form                 : All tiles as one unit.
@@ -22,10 +22,10 @@
 
 */
 
-
-/* Bank of tiles. */
-#define Ball8x8Bank 0
 /* Start of tile array. */
-extern unsigned char Ball8x8[];
+unsigned char BallSprite[] =
+    {
+        0x3C, 0x3C, 0x5E, 0x62, 0xB3, 0xC1, 0xB3, 0xC1,
+        0xBF, 0xC1, 0x9D, 0xE3, 0x42, 0x7E, 0x3C, 0x3C};
 
-/* End of EXPORT.H */
+/* End of EXPORT.C */
