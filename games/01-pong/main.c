@@ -1,19 +1,14 @@
 #include <gb/gb.h>
-#include "player/player.h"
-#include "ball/ball.h"
-#include "background/background.h"
+#include "game/init_objects.h"
+#include "game/start_game.h"
 
 void main(void)
 {
-    render_background();
-    init_ball();
-    init_player();
-    SHOW_SPRITES;
+    init_objects();
 
     while (1)
     {
-        control_player();
-        start_ball_movement();
+        start_game();
         vsync();
     }
 }

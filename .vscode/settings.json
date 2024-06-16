@@ -12,6 +12,7 @@
     "background.h": "c",
     "wall.h": "c",
     "player.h": "c",
-    "ball.h": "c"
+    "ball.h": "c",
+    "init_objects.h": "c"
   }
 }
