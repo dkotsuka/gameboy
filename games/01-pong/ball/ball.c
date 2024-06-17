@@ -44,6 +44,6 @@ void check_ball_collision_with_player(Object *ball, Object *player)
     {
         ball->direction.y = -1;
         ball->position.x = ball_pos_x;
-        ball->position.y = ball_pos_y;
+        ball->position.y = player->position.y - ball->height;
     }
 }
