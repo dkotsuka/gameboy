@@ -17,18 +17,33 @@ void init_ball(Object *ball)
     set_sprite_tile(3, 3);
     ball->sprite_ids[0] = 3;
 
-    move_ball(ball, ball->position.x + 4, ball->position.y + 4);
+    move_ball_sprite(ball, ball->position.x, ball->position.y);
 }
 
-void move_ball(Object *ball, uint8_t future_pos_x, uint8_t future_pos_y)
+void move_ball_sprite(Object *ball, uint8_t future_pos_x, uint8_t future_pos_y)
 {
     check_wall_collision(ball, future_pos_x, future_pos_y, 1);
     move_sprite(ball->sprite_ids[0], ball->position.x, ball->position.y);
 }
 
-void start_ball_movement(Object *ball)
+void move_ball(Object *ball, Object *player)
 {
-    uint8_t position_x = ball->position.x + ball->direction.x * ball->velocity.x;
-    uint8_t position_y = ball->position.y + ball->direction.y * ball->velocity.y;
-    move_ball(ball, position_x, position_y);
+    check_ball_collision_with_player(ball, player);
+    move_ball_sprite(ball, ball->position.x, ball->position.y);
+}
+
+void check_ball_collision_with_player(Object *ball, Object *player)
+{
+    uint8_t ball_pos_x = ball->position.x;
+    uint8_t ball_pos_y = ball->position.y;
+    ball->position.x = ball->position.x + ball->direction.x * ball->velocity.x;
+    ball->position.y = ball->position.y + ball->direction.y * ball->velocity.y;
+
+    BYTE has_collision = check_collision_between(ball, player);
+    if (has_collision == 1)
+    {
+        ball->direction.y = -1;
+        ball->position.x = ball_pos_x;
+        ball->position.y = ball_pos_y;
+    }
 }

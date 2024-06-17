@@ -20,7 +20,7 @@ void init_player(Object *player)
     set_sprite_tile(2, 2);
     player->sprite_ids[2] = 2;
 
-    move_player(player, player->position.x + 4);
+    move_player(player, player->position.x);
 }
 
 void move_player(Object *player, uint8_t position_x)
