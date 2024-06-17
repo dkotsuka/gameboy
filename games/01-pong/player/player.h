@@ -3,11 +3,11 @@
 #include "../background/background.h"
 #include "../globaldefs/globaldefs.h"
 
-void init_player(void);
+void init_player(Object *player);
 
-void move_player(uint8_t position_x);
+void move_player(Object *player, uint8_t position_x);
 
-void control_player(void);
+void control_player(Object *player);
 
-void increase_player_velocity(void);
-void decrease_player_velocity(void);
+void increase_player_velocity(Object *player);
+void decrease_player_velocity(Object *player);

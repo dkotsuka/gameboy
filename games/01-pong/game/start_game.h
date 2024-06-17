@@ -3,4 +3,4 @@
 #include "../ball/ball.h"
 #include "../globaldefs/globaldefs.h"
 
-void start_game(Object *ball);
+void start_game(Object *ball, Object *player);

@@ -8,11 +8,11 @@ Object player;
 
 void main(void)
 {
-    init_objects(&ball);
+    init_objects(&ball, &player);
 
     while (1)
     {
-        start_game(&ball);
+        start_game(&ball, &player);
         vsync();
     }
 }

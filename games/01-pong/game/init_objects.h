@@ -4,4 +4,4 @@
 #include "../background/background.h"
 #include "../globaldefs/globaldefs.h"
 
-void init_objects(Object *ball2);
+void init_objects(Object *ball, Object *player);
