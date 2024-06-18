@@ -40,10 +40,11 @@ void check_ball_collision_with_player(Object *ball, Object *player)
     ball->position.y = ball->position.y + ball->direction.y * ball->velocity.y;
 
     BYTE has_collision = check_collision_between(ball, player);
-    if (has_collision == 1)
+    if (has_collision == 1 && ball->direction.y != -1)
     {
-        ball->direction.y = -1;
-        ball->position.x = ball_pos_x;
-        ball->position.y = player->position.y - ball->height;
+        if (ball->position.y < player->position.y)
+        {
+            ball->direction.y = -1;
+        }
     }
 }

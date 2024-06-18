@@ -4,8 +4,8 @@ void init_player(Object *player)
 {
     player->direction.x = 0;
     player->height = 8;
-    player->width = 24;
-    player->position.x = 80;
+    player->width = 22;
+    player->position.x = 81;
     player->position.y = 148;
     player->velocity.x = 1;
     player->velocity.y = 0;
@@ -27,9 +27,9 @@ void move_player(Object *player, uint8_t position_x)
 {
     check_wall_collision(player, position_x, player->position.y, 0);
 
-    move_sprite(player->sprite_ids[0], player->position.x, player->position.y);
-    move_sprite(player->sprite_ids[1], player->position.x + 8, player->position.y);
-    move_sprite(player->sprite_ids[2], player->position.x + 16, player->position.y);
+    move_sprite(player->sprite_ids[0], player->position.x - 1, player->position.y);
+    move_sprite(player->sprite_ids[1], player->position.x + 7, player->position.y);
+    move_sprite(player->sprite_ids[2], player->position.x + 15, player->position.y);
 }
 
 void control_player(Object *player)
